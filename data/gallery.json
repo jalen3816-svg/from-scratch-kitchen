@@ -1,0 +1,10 @@
+{
+  "items": [
+    {"image":"https://images.unsplash.com/photo-1600871648600-89dd8d71f2d0?w=600&q=80","alt":"Hands kneading dough on a flour-dusted counter"},
+    {"image":"https://images.unsplash.com/photo-1606331481324-de77ab01bb54?w=600&q=80","alt":"Golden baked cornbread brushed with melted butter"},
+    {"image":"https://images.unsplash.com/photo-1723321113703-40f2f309a024?w=600&q=80","alt":"Pot of slow-simmering collard greens with steam rising"},
+    {"image":"https://images.unsplash.com/photo-1639330842151-8a92eb332b2d?w=600&q=80","alt":"Dessert table styled for a celebration"},
+    {"image":"https://images.unsplash.com/photo-1575932444877-5106bee2a599?w=600&q=80","alt":"A full Sunday dinner spread set on the table"},
+    {"image":"https://images.unsplash.com/photo-1720534256762-59e251d1ec1b?w=600&q=80","alt":"An open Bible resting on a wooden kitchen counter"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "phone": "",
+  "phone_public": false,
+  "email": "",
+  "address": "",
+  "show_map": false,
+  "owner_photo": "",
+  "hours": [
+    {"days":"Monday – Wednesday","time":"Order ahead"},
+    {"days":"Thursday – Friday","time":"12pm – 7pm"},
+    {"days":"Saturday","time":"11am – 6pm"},
+    {"days":"Sunday","time":"After church · 1pm – 5pm"}
+  ],
+  "show_stats": false,
+  "stat_rating": "",
+  "stat_served": "",
+  "stat_handmade": "100%"
+}

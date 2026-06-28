@@ -1,0 +1,10 @@
+{
+  "items": [
+    {"name":"The Sunday Dinner Plate","description":"Smothered chicken, candied yams, slow-cooked greens, and sweet cornbread. A full Sunday on one plate — any day of the week.","price":"Starting at $16","image":"https://images.unsplash.com/photo-1740125492753-28394dac8165?w=800&q=80"},
+    {"name":"Five-Cheese Baked Mac","description":"Baked deep, crusted golden, and stretchy in the middle. The dish that disappears first at every cookout.","price":"$8 side · pans starting at $35","image":"https://images.unsplash.com/photo-1701484185547-a71576b65e1a?w=800&q=80"},
+    {"name":"Old-Fashioned Peach Cobbler","description":"Buttery crust, real peaches, warm spice. Tastes like somebody's grandmother prayed over it — because somebody did.","price":"$6 slice · $35 pan","image":"https://images.unsplash.com/photo-1772064945158-1644b7f880f9?w=800&q=80"},
+    {"name":"Banana Pudding, Done Right","description":"Layered by hand with real bananas and homemade custard. No instant pudding allowed in this kitchen.","price":"$7 cup · $40 pan","image":"https://images.unsplash.com/photo-1778783384294-138af8d3b16f?w=800&q=80"},
+    {"name":"Butter Pound Cake","description":"Dense, golden, and rich — the cake that shows up at every celebration and never makes it home.","price":"$5 slice · whole cake $30","image":"https://images.unsplash.com/photo-1641058444508-3a3fdc36464d?w=800&q=80"},
+    {"name":"Family Pans & Events","description":"Feeding 6 or 60? We cook for family dinners, repasts, church events, and celebrations — delivered with care.","price":"Family pans starting at $65 · events: contact for pricing","image":"https://images.unsplash.com/photo-1712431700638-311e9682db5e?w=800&q=80"}
+  ]
+}
