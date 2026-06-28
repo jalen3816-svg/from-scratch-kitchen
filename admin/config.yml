@@ -1,0 +1,92 @@
+# Use DecapBridge classic auth (required)
+backend:
+  name: git-gateway
+  repo: jalen3816-svg/from-scratch-kitchen
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/76e76571-535e-4076-ae0a-c30926a210b1
+  gateway_url: https://gateway.decapbridge.com
+  # See who did what (optional)
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+# Better Decap + Bridge logo (optional)
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+
+# Add site links in Decap CMS (optional)
+site_url: https://fromscratchkitchen.netlify.app
+
+# Where uploaded photos are saved, and the URL path they use on the site
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: content
+    label: "Website Content"
+    description: "Edit your menu, photos, reviews, and business info, then click Publish."
+    files:
+      - name: site
+        label: "Business Info & Hours"
+        file: "data/site.json"
+        fields:
+          - { name: phone, label: "Phone number", widget: string, required: false, hint: "Leave blank to keep it private." }
+          - { name: phone_public, label: "Show the phone number on the website?", widget: boolean, default: false }
+          - { name: email, label: "Email address", widget: string, required: false }
+          - { name: address, label: "Pickup address", widget: string, required: false }
+          - { name: show_map, label: "Show a map with the pickup address?", widget: boolean, default: false }
+          - { name: owner_photo, label: "Owner photo (Our Story section)", widget: image, required: false }
+          - name: hours
+            label: "Order & Pickup Hours"
+            widget: list
+            fields:
+              - { name: days, label: "Days", widget: string }
+              - { name: time, label: "Time", widget: string }
+          - { name: show_stats, label: "Show the stats bar (rating / plates served)?", widget: boolean, default: false }
+          - { name: stat_rating, label: "Rating (e.g. ★★★★★) — only if true", widget: string, required: false }
+          - { name: stat_served, label: "Plates served (e.g. 500+) — only if true", widget: string, required: false }
+          - { name: stat_handmade, label: "Handmade (e.g. 100%)", widget: string, required: false, default: "100%" }
+
+      - name: menu
+        label: "Menu Items"
+        file: "data/menu.json"
+        fields:
+          - name: items
+            label: "Menu items"
+            label_singular: "menu item"
+            widget: list
+            fields:
+              - { name: name, label: "Name", widget: string }
+              - { name: description, label: "Description", widget: text, required: false }
+              - { name: price, label: "Price", widget: string, required: false }
+              - { name: image, label: "Photo", widget: image, required: false }
+
+      - name: gallery
+        label: "Gallery Photos"
+        file: "data/gallery.json"
+        fields:
+          - name: items
+            label: "Photos"
+            label_singular: "photo"
+            widget: list
+            fields:
+              - { name: image, label: "Photo", widget: image }
+              - { name: alt, label: "Short description (for accessibility)", widget: string, required: false }
+
+      - name: reviews
+        label: "Reviews"
+        file: "data/reviews.json"
+        fields:
+          - name: items
+            label: "Reviews"
+            label_singular: "review"
+            widget: list
+            required: false
+            fields:
+              - { name: quote, label: "What they said", widget: text }
+              - { name: name, label: "Name", widget: string }
+              - { name: detail, label: "Detail (e.g. 'East Side Detroit · repast')", widget: string, required: false }
+              - { name: stars, label: "Stars (1–5)", widget: number, default: 5, value_type: int, min: 1, max: 5 }
