@@ -9,9 +9,9 @@
 
 backend:
   name: git-gateway
-  repo: YOUR-GITHUB-USERNAME/from-scratch-kitchen   # <<< REPLACE (DecapBridge gives you this)
+  repo: repo: jalen3816-svg/from-scratch-kitchen
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/YOUR-SITE-ID   # <<< REPLACE (from DecapBridge)
+  identity_url: https://auth.decapbridge.com/sites/76e76571-535e-4076-ae0a-c30926a210b1
   gateway_url: https://gateway.decapbridge.com
 
 # Nicer commit messages (optional, safe to leave as-is)
@@ -27,7 +27,7 @@ media_folder: "images"
 public_folder: "/images"
 
 # Friendlier labels in the editor
-site_url: https://YOUR-SITE.netlify.app   # <<< REPLACE with your live site address (optional but nice)
+site_url: https://fromscratchkitchen.netlify.app
 
 collections:
   - name: content
